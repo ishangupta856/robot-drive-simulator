@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Drive Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Robot Drive Simulator</h1>
+    <p class="subtitle">
+      Control the left and right wheel speeds and see how a two-wheel robot moves.
+    </p>
+
+    <section class="panel">
+      <div class="control">
+        <label for="leftSpeed">Left Motor Speed: <span id="leftValue">50</span>%</label>
+        <input id="leftSpeed" type="range" min="-100" max="100" value="50" />
+      </div>
+
+      <div class="control">
+        <label for="rightSpeed">Right Motor Speed: <span id="rightValue">50</span>%</label>
+        <input id="rightSpeed" type="range" min="-100" max="100" value="50" />
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn" class="primary">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div class="status-box">
+        <strong>Robot movement:</strong>
+        <span id="movement">Forward</span>
+      </div>
+    </section>
+
+    <canvas id="field" width="760" height="460"></canvas>
+
+    <section class="legend">
+      <p><strong>How it works:</strong> Different wheel speeds make the robot turn.</p>
+      <p>Equal speeds → straight &nbsp; | &nbsp; One side faster → curve &nbsp; | &nbsp; Opposite speeds → spin</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
