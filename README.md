@@ -40,15 +40,3 @@ This project helped me practice:
 - User controls
 - Animation with HTML Canvas
 
-## Run it
-
-Open `index.html` in a browser.
-
-## Publish with GitHub Pages
-
-1. Create a public GitHub repository.
-2. Upload `index.html`, `styles.css`, `script.js`, and `README.md`.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`.
-6. Save.
